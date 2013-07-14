@@ -1,0 +1,72 @@
+html {
+  margin: 0;
+  padding: 0; }
+  html body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 2000px; }
+
+@media (min-width: 900px) {
+  header {
+    text-transform: lowercase; }
+    header.h-main {
+      background: url("/img/background.jpg") no-repeat;
+      background-size: cover;
+      background-position: 50% -200px;
+      color: white;
+      height: 500px;
+      box-shadow: 0 0 15px #333 inset; }
+      header.h-main:after {
+        content: "";
+        display: block;
+        height: 100%; }
+      header.h-main .h-right {
+        max-width: 560px;
+        float: right;
+        font-weight: 300; }
+        header.h-main .h-right .h-content {
+          text-align: right;
+          float: right;
+          line-height: 1em;
+          font-size: 100px;
+          margin: 40px 80px 0 80px;
+          clear: both; }
+        header.h-main .h-right .line1, header.h-main .h-right .line2 {
+          float: right;
+          margin-top: 20px;
+          background: rgba(0, 0, 0, 0.4); }
+        header.h-main .h-right .h-description {
+          margin: 20px 80px 0 0;
+          font-size: 20px;
+          line-height: 1em;
+          text-align: right;
+          float: right;
+          background: rgba(0, 0, 0, 0.4); }
+      header.h-main nav.h-nav {
+        float: left;
+        margin: 40px 0 0 40px; }
+        header.h-main nav.h-nav a {
+          color: white;
+          font-weight: 300;
+          font-size: 20px;
+          background: rgba(0, 0, 0, 0.4);
+          display: inline-block;
+          margin: 5px 10px;
+          padding: 3px; }
+          header.h-main nav.h-nav a:link, header.h-main nav.h-nav a:visited {
+            color: inherit; }
+
+  section .section-content {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 200px;
+    text-transform: lowercase; }
+    section .section-content h2 {
+      font-weight: 300;
+      font-size: 30px;
+      margin: 0;
+      padding: 20px; }
+    section .section-content p {
+      text-transform: none;
+      padding: 0 20px; } }
