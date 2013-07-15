@@ -11,7 +11,7 @@ html {
   header {
     text-transform: lowercase; }
     header.h-main {
-      background: url("img/background.jpg") no-repeat;
+      background: url("../img/background.jpg") no-repeat;
       background-size: cover;
       background-position: 50% -200px;
       color: white;
@@ -32,11 +32,12 @@ html {
           font-size: 100px;
           margin: 40px 80px 0 80px;
           clear: both; }
-        header.h-main .h-right .line1, header.h-main .h-right .line2 {
+        header.h-main .h-right .line {
           float: right;
           margin-top: 20px;
           background: rgba(0, 0, 0, 0.4);
-          padding: 3px; }
+          padding: 3px;
+          clear: right; }
         header.h-main .h-right .h-description {
           margin: 20px 80px 0 0;
           font-size: 20px;
@@ -45,30 +46,75 @@ html {
           float: right;
           background: rgba(0, 0, 0, 0.4);
           padding: 3px; }
-      header.h-main nav.h-nav {
-        float: left;
-        margin: 40px 0 0 40px; }
-        header.h-main nav.h-nav a {
-          color: white;
-          font-weight: 300;
-          font-size: 20px;
+    header nav.h-nav {
+      float: left;
+      margin: 40px 0 0 40px; }
+      header nav.h-nav a {
+        color: white;
+        font-weight: 300;
+        font-size: 20px;
+        background: rgba(0, 0, 0, 0.4);
+        display: inline-block;
+        margin: 5px 10px;
+        padding: 3px; }
+        header nav.h-nav a:link, header nav.h-nav a:visited {
+          color: inherit; }
+    header.h-news {
+      background: url("../img/blog.jpg") no-repeat;
+      background-size: cover;
+      background-position: 50% -400px;
+      color: white;
+      height: 200px;
+      box-shadow: 0 0 15px #333 inset; }
+      header.h-news:after {
+        content: "";
+        display: block;
+        height: 100%; }
+      header.h-news .h-right {
+        max-width: 500px;
+        float: right;
+        font-weight: 300; }
+        header.h-news .h-right .h-content {
+          text-align: right;
+          float: right;
+          line-height: 1em;
+          font-size: 30px;
+          margin: 40px 80px 0 80px;
+          clear: both; }
+        header.h-news .h-right .line {
+          float: right;
+          margin-top: 5px;
           background: rgba(0, 0, 0, 0.4);
-          display: inline-block;
-          margin: 5px 10px;
+          padding: 3px;
+          clear: right; }
+        header.h-news .h-right .h-description {
+          margin: 20px 80px 0 0;
+          font-size: 16px;
+          line-height: 1em;
+          text-align: right;
+          float: right;
+          background: rgba(0, 0, 0, 0.4);
           padding: 3px; }
-          header.h-main nav.h-nav a:link, header.h-main nav.h-nav a:visited {
-            color: inherit; }
 
-  section .section-content {
+  section.main .section-content {
     width: 900px;
     margin: 0 auto;
     min-height: 200px;
     text-transform: lowercase; }
-    section .section-content h2 {
+    section.main .section-content h2 {
       font-weight: 300;
       font-size: 30px;
       margin: 0;
       padding: 20px; }
-    section .section-content p {
+    section.main .section-content p {
       text-transform: none;
-      padding: 0 20px; } }
+      padding: 0 20px; }
+  section.blog article.post {
+    width: 900px;
+    margin: 0 auto;
+    min-height: 200px;
+    text-transform: lowercase; }
+    section.blog article.post h3.post-title {
+      font-weight: 300;
+      margin: 0;
+      padding: 10px; } }
