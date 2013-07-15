@@ -11,7 +11,7 @@ html {
   header {
     text-transform: lowercase; }
     header.h-main {
-      background: url("/img/background.jpg") no-repeat;
+      background: url("img/background.jpg") no-repeat;
       background-size: cover;
       background-position: 50% -200px;
       color: white;
@@ -35,14 +35,16 @@ html {
         header.h-main .h-right .line1, header.h-main .h-right .line2 {
           float: right;
           margin-top: 20px;
-          background: rgba(0, 0, 0, 0.4); }
+          background: rgba(0, 0, 0, 0.4);
+          padding: 3px; }
         header.h-main .h-right .h-description {
           margin: 20px 80px 0 0;
           font-size: 20px;
           line-height: 1em;
           text-align: right;
           float: right;
-          background: rgba(0, 0, 0, 0.4); }
+          background: rgba(0, 0, 0, 0.4);
+          padding: 3px; }
       header.h-main nav.h-nav {
         float: left;
         margin: 40px 0 0 40px; }
